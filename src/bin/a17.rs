@@ -27,16 +27,25 @@ fn main() {
         }
     }
 
-    let route = route(&from, n);
-    println!("{}", route.1);
-    println!("{}", route.0);
+    let mut rt: Vec<usize> = Vec::new();
+    let len = route(&from, n, &mut rt);
+    println!("{}", len);
+    println!(
+        "{}",
+        rt.iter()
+            .map(|x| x.to_string())
+            .collect::<Vec<String>>()
+            .join(" ")
+    )
 }
 
-fn route(from: &Vec<usize>, idx: usize) -> (String, usize) {
+fn route(from: &Vec<usize>, idx: usize, rt: &mut Vec<usize>) -> usize {
     if idx > 1 {
-        let r = route(from, from[idx - 1]);
-        (format!("{} {}", r.0, idx), r.1 + 1)
+        let r = route(from, from[idx - 1], rt);
+        rt.push(idx);
+        r + 1
     } else {
-        (1.to_string(), 1)
+        rt.push(1);
+        1
     }
 }
