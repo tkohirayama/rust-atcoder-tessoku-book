@@ -7,3 +7,56 @@ edition = "2021"
 
 [dependencies]
 proconio = "0.4.3"
+string-builder = "0.2.0"
+
+[[bin]]
+name = "a01"
+path = "src/a01.rs"
+[[bin]]
+name = "a02"
+path = "src/a02.rs"
+[[bin]]
+name = "a03"
+path = "src/a03.rs"
+[[bin]]
+name = "a04"
+path = "src/a04.rs"
+[[bin]]
+name = "a05"
+path = "src/a05.rs"
+[[bin]]
+name = "a06"
+path = "src/a06.rs"
+[[bin]]
+name = "a07"
+path = "src/a07.rs"
+[[bin]]
+name = "a08"
+path = "src/a08.rs"
+[[bin]]
+name = "a09"
+path = "src/a09.rs"
+[[bin]]
+name = "a10"
+path = "src/a10.rs"
+[[bin]]
+name = "a11"
+path = "src/a11.rs"
+[[bin]]
+name = "a12"
+path = "src/a12.rs"
+[[bin]]
+name = "a13"
+path = "src/a13.rs"
+[[bin]]
+name = "a14"
+path = "src/a14.rs"
+[[bin]]
+name = "a15"
+path = "src/a15.rs"
+[[bin]]
+name = "a16"
+path = "src/a16.rs"
+[[bin]]
+name = "a17"
+path = "src/a017.rs"
